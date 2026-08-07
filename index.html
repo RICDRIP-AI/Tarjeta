@@ -178,6 +178,16 @@ text-align:left;
 cursor:pointer;
 }
 .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.14)}
+.btn:disabled{
+opacity:.55;
+cursor:default;
+pointer-events:none;
+}
+.proximamente{
+font-size:.78rem;
+font-weight:500;
+color:var(--cromo);
+}
 .btn .icono{
 width:40px;height:40px;border-radius:12px;
 background:var(--menta-suave);
@@ -415,12 +425,6 @@ Agendar cita
 
 <div class="acciones">
 
-<a class="btn" href="#" target="_blank" rel="noopener">
-<span class="icono"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zm0 2h12l1.5 2h-15L6 4zM4 9h16v11H4V9zm4 2v2a4 4 0 0 0 8 0v-2h-2v2a2 2 0 0 1-4 0v-2H8z"/></svg></span>
-Catálogo de compra
-<span class="flecha">›</span>
-</a>
-
 <button class="btn" data-toggle="modelos" aria-expanded="false" aria-controls="panel-modelos">
 <span class="icono"><svg viewBox="0 0 24 24"><path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h10v2H4v-2z"/></svg></span>
 Modelos disponibles
@@ -431,6 +435,11 @@ Modelos disponibles
 <span class="icono"><svg viewBox="0 0 24 24"><path d="M12 2 2 7v2h20V7L12 2zM4 11v7H2v2h20v-2h-2v-7h-3v7h-3v-7h-3v7H7v-7H4z"/></svg></span>
 Datos para transferencia
 <span class="flecha">›</span>
+</button>
+
+<button class="btn" disabled>
+<span class="icono"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zm0 2h12l1.5 2h-15L6 4zM4 9h16v11H4V9zm4 2v2a4 4 0 0 0 8 0v-2h-2v2a2 2 0 0 1-4 0v-2H8z"/></svg></span>
+Catálogo de compra <span class="proximamente">(coming soon)</span>
 </button>
 
 </div>
